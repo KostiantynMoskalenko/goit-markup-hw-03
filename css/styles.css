@@ -83,13 +83,13 @@ ol {
 
 /*header*/
 
+.header {
+  border-bottom: 1px solid var(--accent-background-color);
+}
+
 .header .container {
   display: flex;
-  width: 1440px;
   align-items: center;
-  padding-left: 156px;
-  padding-right: 156px;
-  border-bottom: 1px solid var(--accent-background-color);
 }
 
 .header-logo {
@@ -99,7 +99,6 @@ ol {
 .header-logo,
 .footer-logo {
   display: flex;
-  padding: 5px 0;
   align-items: center;
   font-family: raleway, sans-serif;
   font-size: 18px;
@@ -174,11 +173,9 @@ ol {
 
 /*main section*/
 
-.main-section .container {
+.main-section {
   background-color: var(--dark-color);
-  width: 1440px;
-  padding: 188px 472px;
-  margin-bottom: 120px;
+  padding: 188px 0;
 }
 
 .main-header {
@@ -188,6 +185,8 @@ ol {
   line-height: 1.4em;
   text-align: center;
   width: 496px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 48px;
 }
 
@@ -214,11 +213,13 @@ ol {
 }
 
 /*advantages*/
+.advantages-section {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
 
 .advantages-section .container {
   display: flex;
-  width: 1128px;
-  margin-bottom: 120px;
 }
 
 .main-list-advantages {
@@ -233,6 +234,7 @@ ol {
 .inner-header-advantages,
 .inner-header-team,
 .portfolio-inner-header {
+  margin-bottom: 8px;
   color: var(--primary-titles-color);
   font-size: 20px;
   letter-spacing: 0.02em;
@@ -241,8 +243,8 @@ ol {
 
 /*our works*/
 
-.our-works .container {
-  margin-bottom: 120px;
+.our-works {
+  padding-bottom: 120px;
 }
 
 .main-header-works,
@@ -263,8 +265,7 @@ ol {
 
 /*our team*/
 
-.our-team .container {
-  width: 1440px;
+.our-team {
   background-color: var(--light-background-color);
   padding-top: 120px;
   padding-bottom: 120px;
@@ -284,15 +285,12 @@ ol {
 }
 
 .team-caption {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  padding: 32px 16px;
+  padding: 32px 0;
 }
 
 /*portfolio*/
 
-.filters-section .container {
+.filters-section {
   padding-top: 96px;
   padding-bottom: 120px;
 }
@@ -336,27 +334,19 @@ ol {
   border-top: none;
 }
 
-.portfolio-photo {
-  padding-bottom: 32px;
+.portfolio .portfolio-photo {
   object-fit: cover;
 }
 
-.portfolio-inner-header {
-  padding-bottom: 8px;
-  padding-left: 16px;
-}
-
-.portfolio-text {
-  padding-bottom: 32px;
-  padding-left: 16px;
+.portfolio-caption {
+  padding: 32px 0 32px 16px;
 }
 
 /*footer*/
 
-.footer .container {
-  width: 1440px;
+.footer {
   background-color: var(--dark-color);
-  padding: 100px 0 100px 156px;
+  padding: 100px 0;
 }
 
 .footer-logo-accent {
@@ -364,7 +354,7 @@ ol {
 }
 
 .footer-logo {
-  margin-bottom: 11px;
+  margin-bottom: 17.5px;
 }
 
 .footer-paragraph {
